@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact</title>
+<link rel = "stylesheet" href="styles.css">
+<style>
+
+a{
+	color: #FFFFFF;
+	text-decoration: none;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.5vw;
+	opacity: 0;
+	animation: ani2 0.75s ease-out 0.70s forwards;
+}
+
+a:hover{
+	color: yellow;
+	transition: 0.5s;
+}
+
+
+body {
+    background-color: #F6E5D9;
+    font-family: 'verdana';
+    margin: 0;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.contact-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 20px;
+    border: 2px solid #333;
+    background-color: #D1966A;
+    color: #FFF8DC;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #8B4513;
+    color: #FFF;
+}
+
+.contact-section {
+    border: 2px solid #333;
+    padding: 20px;
+    margin: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.input-box {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid #333;
+}
+
+.send-button {
+    background-color: #D1966A;
+    color: #FFF8DC;
+    padding: 10px 20px;
+    border: 2px solid #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #8B4513;
+    color: #FFF;
+}
+</style>
+
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.send-button').addEventListener('click', function () {
+                // Get user inputs
+                const name = document.querySelector('.input-name').value;
+                const phoneNumber = document.querySelector('.input-phone').value;
+                const emailTitle = document.querySelector('.input-title').value;
+                const message = document.querySelector('.input-message').value;
+
+                // Create a pre-filled message
+                const preFilledMessage = `Name: ${name} Phone Number: ${phoneNumber} Email Title: ${emailTitle} Message: ${message}`;
+
+                // Generate WhatsApp URL
+                const whatsappUrl = `https://wa.me/60174662450?text=${encodeURIComponent(preFilledMessage)}`;
+
+                // Redirect to WhatsApp
+                window.location.href = whatsappUrl;
+            });
+        });
+</script>
+
+</head>
+
+<body style="background-color: #F6E5D9; font-family:verdana; margin:0; ">
+<div style="width:100%; height: 100px; background-color: #D1966A">
+</br>
+<h3 style = text-align:right display = inline-block >
+    <a href = "index.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href = "about.html">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href = "gallery.html">GALLERY</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href = "portfolio.html">PORTFOLIO</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href = "contact.html">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</h3>
+</div>
+            
+</br>
+<div class="contact-container">
+    <div class="contact-buttons">
+        <a href="https://www.linkedin.com/in/muhammad-sufian-bin-saiful-576083248/" target="_blank" class="contact-button">
+            <img src="Image/linkedin.png" alt="LinkedIn" width="20" height="20"> LinkedIn
+        </a>
+        <a href="https://wa.me/60174662450" target="_blank" class="contact-button">
+            <img src="Image/whatsapp.png" alt="WhatsApp" width="20" height="20"> WhatsApp
+        </a>
+        <a href="https://t.me/sufianzx" target="_blank" class="contact-button">
+            <img src="Image/telegram.png" alt="Telegram" width="20" height="20"> Telegram
+        </a>
+        <a href="mailto:muhammadsufiansaiful@gmail.com" target="_blank" class="contact-button">
+            <img src="Image/email.png" alt="Email" width="20" height="20"> Email
+        </a>
+    </div>
+
+    <div class="contact-section">
+        <h2>Leave a Message</h2>
+        <input type="text" placeholder="Your Name" class="input-box input-name">
+        <input type="tel" placeholder="Your Phone Number" class="input-box input-phone">
+        <input type="text" placeholder="Title" class="input-box input-title">
+        <textarea placeholder="Your Message" rows="5" class="input-box input-message"></textarea>
+        <button class="send-button">Send Message</button>
+    </div>
+
+</div>
+
+<div class="footer" style="position:relative;">
+    <p>Email: muhammadsufiansaiful@gmail.com</p>
+    <p>Contact Number: +6017-4662450</p>
+    <p>UITM Puncak Perdana, Jalan Pulau Indah Au10/A,</br>Puncak Perdana, 40150 Shah Alam, Selangor</p>
+</div>
+
+</body>
+
+</html>

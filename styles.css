@@ -1,0 +1,121 @@
+body {
+    background-color: #F6E5D9;
+    font-family: 'verdana';
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Custom scrollbar */
+body::-webkit-scrollbar {
+    width: 8px; /* Make the scrollbar narrower */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #8B4513; /* Saddlebrown color for the thumb */
+    border-radius: 0; 
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #FFF8DC; /* Cornsilk color for the track */
+}
+
+/* Smooth scrolling effect */
+html {
+    scroll-behavior: smooth;
+}
+
+.wrapper-text{
+	text-align: left;
+	line-height: 60px;
+	letter-spacing: 1px;
+	font-family: lato;
+	text-transform: uppercase;
+	margin-bottom: 160px;
+	margin:auto;
+	width: 800px;
+	padding: 25px;
+	border-radius: 0.25rem;
+	background-color: #E0B795;
+	opacity: 0;
+	animation: ani2 1s ease-out forwards;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center
+}   
+
+.wrapper-text h2,
+.wrapper-text h4,
+.wrapper-text p{
+	opacity: 0;
+	margin: 0;
+}
+
+.wrapper-text h2{
+	animation: ani2 0.75s ease-out 0.70s forwards;
+	font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+}
+
+.wrapper-text h4{
+	animation: ani2 0.75s ease-out 0.95s forwards;
+	font-size: 30px;
+	color: #ffffff;;
+}
+
+.wrapper-text p{
+	animation: ani2 0.75s ease-out 0.70s forwards;
+	font-size: 16px;
+    text-transform: none;
+    line-height: 1.8;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: rgb(0, 0, 0);
+}
+
+@keyframes ani2{
+	100%{
+		opacity: 1;
+	}
+}
+
+.footer {
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #333;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	opacity: 0;
+	animation: ani2 0.75s ease-out 0.70s forwards;
+}
+
+.footer p {
+	margin: 5px 0;
+	font-size: small;
+}
+
+.video-container {
+	text-align: center;
+	margin-top: 20px;
+	border: 5px solid #D2B48C; /* Tan brown border color */
+	padding: 10px;
+}
+  
+.resume-video {
+	width: 60%; /* Adjust the width to make the video smaller */
+	max-width: 100%; /* Ensure the video doesn't exceed its natural size */
+}
+
+.video-container h2 {
+	font-family: 'verdana';
+	color: #8B4513; /* Color for heading text is changed to saddlebrown */
+	margin-bottom: 10px;
+}
+  
+
