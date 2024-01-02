@@ -1,51 +1,57 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en">
 <head>
 
-<meta charset = "utf-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>About</title>
-<link rel = "stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 <style>
 
-a{
-	color: #FFFFFF;
-	text-decoration: none;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.5vw;
-	opacity: 0;
-	animation: ani2 0.75s ease-out 0.70s forwards;
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5vw;
+    opacity: 0;
+    animation: ani2 0.75s ease-out 0.70s forwards;
 }
 
-a:hover{
-	color: yellow;
-	transition: 0.5s;
+a:hover {
+    color: yellow;
+    transition: 0.5s;
 }
 
 .side-by-side {
     display: inline-block;
-    width: 30%;
-    margin-right: 10px;
+    width: 21%; 
+    margin-right: 1%; /* Adjusted margin for smaller gap */
     vertical-align: top;
-    border: 1px solid #FFD700; /* Border color is changed to gold */
-    background-color: #FFF8DC; /* Background color is changed to cornsilk */
+    border: 1px solid #FFD700; 
+    background-color: #FFF8DC;
     padding: 10px;
     opacity: 0;
     animation: ani2 0.75s ease-out 0.70s forwards;
+    font-size: 1.2vw; /* Adjusted font size for better fit */
 }
 
 h2 {
     font-family: 'verdana';
     margin: 0;
     text-align: center;
-    color: #8B4513; /* Color for heading text is changed to saddlebrown */
+    color: #8B4513; 
 }
 
 .side-by-side p {
     text-align: justify;
     line-height: 1.5;
-    color: #2F4F4F; /* Color for paragraph text is changed to darkslategray */
+    color: #2F4F4F; 
+}
+
+.side-by-side li {
+    text-align: left;
+    font-size: smaller;
 }
 
 ul {
@@ -63,12 +69,12 @@ ul li {
 <body style="background-color: #F6E5D9; font-family:verdana; margin:0; ">
 <div style="width:100%; height: 100px; background-color: #D1966A">
 </br>
-<h3 style = text-align:right display = inline-block >
-	<a href = "index.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href = "about.html">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href = "gallery.html">GALLERY</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href = "resume.html">RESUME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	<a href = "contact.html">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<h3 style="text-align: right;">
+    <a href="index.html">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="about.html">ABOUT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="gallery.html">GALLERY</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="resume.html">RESUME</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="contact.html">CONTACT</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </h3>
 </div>
 
@@ -76,33 +82,33 @@ ul li {
 &nbsp;&nbsp;&nbsp;
 
 <div class="side-by-side">
-	<h2 style="font-family:verdana; margin:0; text-align: center;"><i>Personal Information</i></h2>
-	</br></br>
-	<p style="text-align: justify;">
-		<ul style="line-height: 1.8;">
-			<li>Name : Muhammad Sufian Bin Saiful Azrin</li>
-			<li>Age : 22 Years Old</li>
-			<li>Date Of Birth : 19 May 2001</li>
-			<li>Place Of Birth : Perth, Australia</li>
-			<li>Nationality : Malaysian</li>
-			<li>Religion : Islam</li>
-			<li>Race : Malay</li>
-			<li>Gender : Male</li>
-			<li>Marital Status : Single</li>
-			<li>Telephone No : 017-4662450</li>
-			<li>Residental Address : No 40, Jalan Lakeville 38, Seri Iskandar 32610 Perak</li>
-			<li>Current Status : Bachelor's Student</li>
-			<li>Current Address : UITM Puncak Perdana, Jalan Pulau Indah Au10/A, Puncak Perdana, 40150 Shah Alam, Selangor</li>
-		</ul>
-	</p>
+    <h2 style="font-family:verdana; margin:0; text-align: center;"><i>Personal Information</i></h2>
+    </br></br>
+    <p style="text-align: center;">
+        <ul style="line-height: 1.5;">
+            <li><b>Name : </b>Muhammad Sufian Bin Saiful Azrin</li>
+			<li><b>Age : </b>22 Years Old</li>
+			<li><b>Date Of Birth : </b>19 May 2001</li>
+			<li><b>Place Of Birth : </b>Perth, Australia</li>
+			<li><b>Nationality : </b>Malaysian</li>
+			<li><b>Religion : </b>Islam</li>
+			<li><b>Race : </b>Malay</li>
+			<li><b>Gender : </b>Male</li>
+			<li><b>Marital Status : </b>Single</li>
+			<li><b>Telephone No : </b>017-4662450</li>
+			<li><b>Residental Address : </b>No 40, Jalan Lakeville 38, Seri Iskandar 32610 Perak</li>
+			<li><b>Current Status : </b>Bachelor's Student</li>
+			<li><b>Current Address : </b>UITM Puncak Perdana, Jalan Pulau Indah Au10/A, Puncak Perdana, 40150 Shah Alam, Selangor</li></br>
+        </ul>
+    </p>
 </div>
 
 <div class="side-by-side">
     <h2 style="font-family:verdana; margin:0; text-align: center;"><i>Educational Background</i></h2>
-	</br></br>
-	<p style="text-align: justify;">
-		<ul style="line-height: 1.5;">
-			<p><b>Bachelor's Degree</b></p>
+    </br></br>
+    <p style="text-align: center;">
+        <ul style="line-height: 1.5;">
+            <p><b>Bachelor's Degree</b></p>
 			<li>Field Of Study : Information Management System</li>
 			<li>University : Universiti Teknologi Mara, Malaysia</li>
 			<li>Time Period : March 2023 - Current</li>
@@ -116,46 +122,70 @@ ul li {
 			<li>Field Of Study : Aliran Sastera Dan Kemanusiaan</li>
 			<li>School : Sekolah Menengah Kebangsaan Tronoh</li>
 			<li>Year's Taken : 2019</li>
-		</ul>
-	</p>
+        </ul>
+    </p>
 </div>
 
 <div class="side-by-side">
-	<h2 style="font-family:verdana; margin:0; text-align: center;"><i>Experiences</i></h2>
-</br></br>
-<p style="text-align: justify;">
-	<ul style="line-height: 1.5;">
-		<p><b>Industrial Training</b></p>
-		<li>Technical Support Intern for Management Of Information System Department</li>
-		<li>Company : Sharp Electronic Malaysia SDN BHD (Shah Alam)</li>
-		<li>Time Period : Sept 2022 - Feb 2023</li>
+    <h2 style="font-family:verdana; margin:0; text-align: center;"><i>Experiences</i></h2>
+    </br></br>
+    <p style="text-align: center;">
+        <ul style="line-height: 1.5;">
+            <p><b>Industrial Training</b></p>
+		    <li>Technical Support Intern for Management Of Information System Department</li>
+		    <li>Company : Sharp Electronic Malaysia SDN BHD (Shah Alam)</li>
+		    <li>Time Period : Sept 2022 - Feb 2023</li>
 
-		<p><b>Part-Time Promoter</b></p>
-		<li>Agency : RedNose, SYNC and ML Event</li>
-		<li>Product Brand : KokoCrunch, Energizer, ArmourAll, FirstPride, Dutch Lady, KitKat</li>
-		<li>Time Period : October 2022 - Current</li>
+		    <p><b>Part-Time Promoter</b></p>
+		    <li>Agency : RedNose, SYNC and ML Event</li>
+		    <li>Product Brand : KokoCrunch, Energizer, ArmourAll, FirstPride, Dutch Lady, KitKat</li>
+		    <li>Time Period : October 2022 - Current</li>
 
-		<p><b>Part-Time Cashier</b></p>
-		<li>Job Description : Cashier and Shopkeeper</li>
-		<li>Store : Zubair Food SDN BHD (Seri Iskandar)</li>
-		<li>Time Period : January 2019 - December 2020</li>
-	</ul>
-</p>
+		    <p><b>Part-Time Cashier</b></p>
+		    <li>Job Description : Cashier and Shopkeeper</li>
+		    <li>Store : Zubair Food SDN BHD (Seri Iskandar)</li>
+		    <li>Time Period : January 2019 - December 2020</li>
+
+        </ul>
+    </p>
+</div>
+
+<div class="side-by-side">
+    <h2 style="font-family:verdana; margin:0; text-align: center;"><i>Skills</i></h2>
+    </br></br>
+    <p style="text-align: center;">
+        <ul style="line-height: 1.5;">
+            <p><b>Communication Skills: </b></p>
+            <li>Technical Support</li>
+            <li>Customer Service</li>
+            <p><b>Programming Languages: </b></p>
+            <li>C++, Java and Phyton</li>
+            <p><b>Multimedia Skills: </b></p>
+            <li>Adobe Photoshop</li>
+            <li>Capcut and Canva</li>
+            <p><b>Linguistic Abilities: </b></p>
+            <li>Bahasa Malaysia</li>
+            <li>English</li>
+            <li>Arabic</li>
+            <p><b>Management Skills: </b></p>    
+            <li>Database Management</li>
+            <li>Information System Management</li>
+            <li>Documentation Management</li>
+        </ul>
+    </p>
 </div>
 
 <div class="video-container">
-	<h2 style="font-family: 'verdana'; color: #8B4513; margin-bottom: 10px;"><i>Introduction Video</i></h2>
-	<video controls class="resume-video">
-	  <source src="MyResume.mp4" type="video/mp4">
-	  Your browser does not support the video tag.
-	</video>
-  </div>
-  
+    <h2 style="font-family: 'verdana'; color: #8B4513; margin-bottom: 10px;"><i>My Video Resume</i></h2>
+    <video controls class="resume-video">
+        <source src="MyResume.mp4" type="video/mp4">
+    </video>
+</div>
 
 <div class="footer" style="position:relative;">
-  <p>Email: muhammadsufiansaiful@gmail.com</p>
-  <p>Contact Number: +6017-4662450</p>
-  <p>UITM Puncak Perdana, Jalan Pulau Indah Au10/A,</br>Puncak Perdana, 40150 Shah Alam, Selangor</p>
+    <p>Email: muhammadsufiansaiful@gmail.com</p>
+    <p>Contact Number: +6017-4662450</p>
+    <p>UITM Puncak Perdana, Jalan Pulau Indah Au10/A,</br>Puncak Perdana, 40150 Shah Alam, Selangor</p>
 </div>
 
 </body>
